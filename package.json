@@ -1,0 +1,22 @@
+{
+    "name": "graphmania",
+    "version": "0.0.1",
+    "description": "JavaScript library",
+    "type": "module",
+    "scripts": {},
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/micmurawski/graphmania.git"
+    },
+    "keywords": [
+      "visual programming"
+    ],
+    "author": "Michał Murawski",
+    "license": "MIT",
+    "bugs": {},
+    "homepage": "https://github.com/micmurawski/graphmania.git",
+    "devDependencies": {
+      "mocha": "^5.2.0"
+    }
+  }
+  
