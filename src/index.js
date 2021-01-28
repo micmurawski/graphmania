@@ -8,22 +8,22 @@ import { Socket } from './socket.js';
 import { Engine, Recursion } from './engine.js';
 import { EditorView } from './view/index.js';
 
-export default {
+export {
+    Component,
+    Input,
+    Output,
+    Socket,
     Engine,
     Recursion,
-    Component,
     Control,
     Connection,
     Emitter,
-    Input,
     IO,
     Node,
-    NodeEditor,
-    Output,
-    Socket
+    NodeEditor
 }
 
 
-var context = new Engine("name@0.0.1");
-var editor = new EditorView();
-console.log(context.events)
+//var context = new Engine("name@0.0.1");
+//var editor = new EditorView();
+//console.log(context.events)
