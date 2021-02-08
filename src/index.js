@@ -1,4 +1,4 @@
-import { Component } from './engine.js';
+import { Component } from './component.js';
 import { Control } from './control.js';
 import { Emitter } from './core.js';
 import { IO, Output, Input, Connection } from './io.js';
@@ -20,7 +20,8 @@ export {
     Emitter,
     IO,
     Node,
-    NodeEditor
+    NodeEditor,
+    EditorView
 }
 
 

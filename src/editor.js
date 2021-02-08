@@ -1,4 +1,10 @@
-import { Context } from './core.js';
+import { Context, Validator } from './core.js';
+import { EditorEvents } from './events.js';
+import { Node } from './node.js';
+import { Selected } from './selected.js';
+import { EditorView } from './view/index.js';
+import { listenWindow } from './view/utils.js';
+import { Component } from './component.js';
 
 
 export class NodeEditor extends Context {
@@ -137,6 +143,9 @@ export class NodeEditor extends Context {
             await Promise.all(Object.keys(json.nodes).map(async id => {
                 const node = json.nodes[id];
                 const component = this.getComponent(node.name);
+                //console.log(component)
+                //throw new Error(component)
+
 
                 nodes[id] = await component.build(Node.fromJSON(node));
                 this.addNode(nodes[id]);

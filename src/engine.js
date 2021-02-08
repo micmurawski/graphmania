@@ -4,6 +4,11 @@ import { Events, Context, Validator } from './core.js';
 export const State = { AVAILABLE: 0, PROCESSED: 1, ABORT: 2 }
 
 
+function intersect(array1, array2) {
+    return array1.filter(value => -1 !== array2.indexOf(value));
+}
+
+
 export class Component {
 
     data = {};
@@ -18,6 +23,7 @@ export class Component {
     };
 }
 
+
 export class EngineEvents extends Events {
 
     constructor() {
@@ -25,9 +31,6 @@ export class EngineEvents extends Events {
     }
 }
 
-function intersect(array1, array2) {
-    return array1.filter(value => -1 !== array2.indexOf(value));
-}
 
 export class Recursion {
     constructor(nodes) {
