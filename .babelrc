@@ -1,0 +1,43 @@
+{
+    "env": {
+        "browser": {
+            "presets": [
+                [
+                    "@babel/env",
+                    {
+                        "targets": {
+                            "esmodules": true
+                        }
+                    },
+                    "@babel/preset-es2015"
+                ]
+            ],
+            "plugins": [
+                "@babel/plugin-proposal-class-properties",
+                "@babel/plugin-syntax-dynamic-import",
+                "@babel/plugin-transform-modules-commonjs"
+            ]
+        },
+        "module": {
+            "presets": [
+                [
+                    "@babel/env",
+                    {
+                        "targets": {
+                            "node": "15.7.10"
+                        },
+                        "modules": false
+                    }
+                ]
+            ],
+            "plugins": [
+                "@babel/plugin-proposal-class-properties",
+                "@babel/plugin-syntax-dynamic-import"
+            ]
+        }
+    },
+    "sourceMaps": true,
+    "plugins": [
+        "@babel/plugin-proposal-class-properties"
+    ]
+}

@@ -7,19 +7,5 @@ import { NodeEditor } from './editor.js';
 import { Socket } from './socket.js';
 import { Engine, Recursion } from './engine.js';
 import { EditorView } from './view/index.js';
-
-export {
-    Component,
-    Input,
-    Output,
-    Socket,
-    Engine,
-    Recursion,
-    Control,
-    Connection,
-    Emitter,
-    IO,
-    Node,
-    NodeEditor,
-    EditorView
-}
+export { Component, Input, Output, Socket, Engine, Recursion, Control, Connection, Emitter, IO, Node, NodeEditor, EditorView };
+//# sourceMappingURL=index.js.map
